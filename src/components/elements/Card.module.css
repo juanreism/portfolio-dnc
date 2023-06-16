@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    justify-content:center;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 400px;
+    margin: 10px;
+}
+
+.card img:hover{
+    transform:translateY(-10px);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    border-radius: 15px;
+}
+
+.card section{
+    background: rgba(1, 9, 28, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+}

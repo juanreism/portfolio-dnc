@@ -1,0 +1,22 @@
+.footer{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.footer p{
+    justify-content:center;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.item{
+    color: #FFFFFF !important;
+    margin: 10px;
+    text-align: center;
+}
