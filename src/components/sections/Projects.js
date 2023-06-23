@@ -8,21 +8,28 @@ function Projects(){
 
     const img1 = projectA
     const img2 = projectB
-    const repositorio = 'https://github.com/juanreism'
-    const rep1 = 'https://github.com/juanreism/lp-dnc'
-    const hosp1='https://stupendous-sable-3c4746.netlify.app/'
-
     return(
-        <div className={styles.projects}>
-            <h1>Projetos </h1>
-            
-            <Card hosp={hosp1} image={img1} link={rep1} title="LP-DNC" description="blablablablablablabalblablablablablablabalblablab lablablablabalblablablablablablabal" tech="HTML, CSS e JS"/>            
-            <Card image={img2} title="Portfólio React" description="blablablablablablabalblablablablablablabalblablab lablablablabalblablablablablablabal" tech="React"/>     
-            <div className={styles.btn}>
-                <ButtonB link={repositorio} text='Ver repositóriocompleto'/>      
+            <div className={styles.projects} id='Projects'>
+                <h1> Projetos </h1>
+                <Card
+                    img={img1} 
+                    title=" LP - DNC" 
+                    tech="HTML, CSS e JS" 
+                    description="Desenvolvimento de uma Landing Page para o lançamento da formação em tecnologia" 
+                    repo="https://github.com/juanreism/lp-dnc" 
+                    site="https://stupendous-sable-3c4746.netlify.app/"
+                    />
+                <Card
+                    img={img2} 
+                    title="Portfolio React" 
+                    tech="React" 
+                    description="..." 
+                    repo="https://github.com/juanreism/lp-dnc" 
+                    site="https://stupendous-sable-3c4746.netlify.app/"
+                    />
+                <ButtonB text='Acesse meu repositório' link='https://github.com/juanreism?tab=repositories'/>
             </div>
-        </div>
-    )
+        )
 }
 
 export default Projects
