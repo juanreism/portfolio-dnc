@@ -11,6 +11,7 @@ function Projects(){
     return(
             <div className={styles.projects} id='Projects'>
                 <h1> Projetos </h1>
+                <div>
                 <Card
                     img={img1} 
                     title=" LP - DNC" 
@@ -19,6 +20,8 @@ function Projects(){
                     repo="https://github.com/juanreism/lp-dnc" 
                     site="https://stupendous-sable-3c4746.netlify.app/"
                     />
+                
+                </div>
                 <Card
                     img={img2} 
                     title="Portfolio React" 
@@ -27,6 +30,8 @@ function Projects(){
                     repo="https://github.com/juanreism/lp-dnc" 
                     site="https://stupendous-sable-3c4746.netlify.app/"
                     />
+                
+                
                 <ButtonB text='Acesse meu repositório' link='https://github.com/juanreism?tab=repositories'/>
             </div>
         )

@@ -8,7 +8,7 @@ function Presentation (){
     const toRotate = ["Juan Reis!", 'Desenvolvedor FrontEnd!', 'Product Manager!'];
     const [text, setText] = useState('');
     const period = 1000;
-    const [delta, setDelta] = useState(100 - Math.random()*100);
+    const [delta, setDelta] = useState(100);
 
     useEffect(()=>{
         let ticker = setInterval(()=>{
@@ -21,7 +21,7 @@ function Presentation (){
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.lenght -1) : fullText.substring(0, text.length + 1)
+        let updatedText = isDeleting ? fullText.substring(0, text.length -1) : fullText.substring(0, text.length + 1)
 
         setText(updatedText);
 

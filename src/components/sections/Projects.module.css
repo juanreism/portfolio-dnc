@@ -3,6 +3,11 @@
     font-size: 40px;
 }
 
+.projects div{
+    display: flex;
+    justify-content:center; 
+}
+
 .btn{
     text-align: center;
 }
